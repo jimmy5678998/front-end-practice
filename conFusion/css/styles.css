@@ -38,3 +38,18 @@
     margin: 0px auto;
     padding: 5% 10% 5% 10%;
 }
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+.breadcrumb {
+    background-color: #d1caca;
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+}
