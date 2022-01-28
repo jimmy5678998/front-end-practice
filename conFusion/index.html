@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!--bootstrap 4 code-->
+<!--
+-->
+<!--bootstrap 5 code-->   
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -22,9 +25,22 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <!--bootstrap 4 code-->
+            <!--
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"  height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+            -->
+            <!--bootstrap 5 code-->            
+            <a class="navbar-brand me-auto" href="#"><img src="img/logo.png"  height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
@@ -40,7 +56,18 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <!--bootstrap 4 code-->
+                <!--
+                    <div class="col-12 col-sm-6 align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                -->
+                <!--bootstrap 5 code-->
+                <div class="col-12 col-sm-3 d-flex justify-content-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center d-block">
+                    <a href="#reserve-table"  style="text-decoration: none;"><button class="btn btn-sm bg-warning d-block  col-12 btn-block"   style="font-weight: bold;">Reserve Table</button></a>
+
                 </div>
             </div>
         </div>
@@ -51,20 +78,55 @@
             <div class="col-12 col-sm-4 col-md-3 order-sm-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+
+            <div class="col col-sm order-sm-first col-md">
+            <!-- this is bootstrap 4 code -->
+            <!--
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="img/uthappizza.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
+            -->
+            <!-- this is bootstrap 5 code-->
+                <div class="d-flex">
+                    <img class="flex-shrink-0 me-3 img-thumbnail align-self-center"
+                        src="img/uthappizza.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span> <span class="badge rounded-pill bg-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <div class="row row-content align-item-center">
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col col-sm col-md">
+            <!-- this is bootstrap 4 code -->
+            <!--
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div> 
+                    <img class="flex-shrink-0 ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
+            -->
+            <!-- this is bootstrap 5 code-->
+                <div class="d-flex">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge bg-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div> 
+                    <img class="flex-shrink-0 ms-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                </div>
             </div>
         </div>
 
@@ -73,9 +135,77 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                
+                <div class="media">
+                <!-- this is bootstrap 4 code -->
+                <!--
+                    <img class="d-flex mr-3 img-thumbnail align-item-center"
+                    src="img/alberto.png" alt="alberto"> 
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                -->
+                <!-- this is bootstrap 5 code-->
+                    <div class="d-flex">
+                        <img class="flex-shrink-0 me-3 img-thumbnail align-self-center"
+                            src="img/alberto.png" alt="alberto">
+                        <div class="media-body">
+                            <h2 class="mt-0">Alberto Somayya</h2>
+                            <h4>Executive Chef</h4>
+                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 row-content justify-content-center">
+            <div class="card col-12 col-sm-8" id="reserve-table">
+                <h2 class="card-header bg-warning text-white">Reserve a Table</h2>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-12 col-sm-2" style="margin: 1rem 0rem 1rem 0rem">Number of Guests</dt>
+                        <form class="form-group col-12 col-sm-10" style="margin: 1rem 0rem 1rem 0rem">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="1">
+                                <label class="form-check-label" for="1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="2">
+                                <label class="form-check-label" for="2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="3">
+                                <label class="form-check-label" for="3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="4">
+                                <label class="form-check-label" for="4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="5">
+                                <label class="form-check-label" for="5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="" name="number_of_guests" value="6">
+                                <label class="form-check-label" for="6">6</label>
+                            </div>
+                        </form>
+                        <dt class="col-12 col-sm-2" style="margin: 1rem 0rem 1rem 0rem">Date and Time</dt>
+                        <form class="form-group col-12 col-sm-10" > 
+                            <div class="col-12 col-sm-4 form-check-inline">
+                                <input type="text" class="form-control" placeholder="Date" id="date" name="date">
+                            </div>
+                            <div class="col-12 col-sm-4 form-check-inline">
+                                <input type="text" class="form-control" placeholder="Time" id="time" name="time">
+                            </div>
+                        </form>
+                        <div class="form-group col-12" style="margin: 1rem 0rem 1rem 0rem">
+                            <button class="col-4 col-sm-2 btn bg-primary text-white offset-sm-2">Reserve</button>
+                        </div>
+                    </dl>
+                </div>
             </div>
         </div>
     </div>
