@@ -12,10 +12,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -419,86 +421,76 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
     <!-- bootstrap 5 tooltip
-        <script>
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-        </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
     -->
     <!-- jquery for old version bootstrap 4
     <script>
-        $(document).ready(function(){
-            $('[data-bs-toggle="tooltip"]').tooltip();
-        });
+    $(document).ready(function(){
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
     </script>
     -->
     <!-- jquery for carousel 
     <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({
-                interval: 2000
-            });
-            $('#carousel-pause').click(function(){
-                $('#mycarousel').carousel('pause');
-            });
-            $('#carousel-play').click(function(){
-                $('#mycarousel').carousel('cycle');
-            });
+    $(document).ready(function(){
+        $('#mycarousel').carousel({
+            interval: 2000
         });
+        $('#carouselButton').click(function(){
+            if($('#carouselButton').children("span").hasClass('fa-pause')){
+                $('#mycarousel').carousel('pause');
+                $('#carouselButton').children("span").removeClass('fa-pause');
+                $('#carouselButton').children("span").addClass('fa-play');
+            }
+            else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                $('#mycarousel').carousel('cycle');
+                $('#carouselButton').children("span").removeClass('fa-play');
+                $('#carouselButton').children("span").addClass('fa-pause');
+            }
+        });
+    });
+    $('#loginButton').click(function(){
+        $('#loginModal').modal('show');
+    });
+    $('#reserveButton').click(function(){
+        $('#reserve-table-modal').modal('show');
+    });
+    $('#reserveCloseButton').click(function(){
+        $('#reserve-table-modal').modal('hide');
+    });
+    $('#loginCloseButton').click(function(){
+        $('#loginModal').modal('hide');
+    });
     </script>
     -->
-    <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({
-                interval: 2000
-            });
-            $('#carouselButton').click(function(){
-                if($('#carouselButton').children("span").hasClass('fa-pause')){
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children("span").removeClass('fa-pause');
-                    $('#carouselButton').children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children("span").removeClass('fa-play');
-                    $('#carouselButton').children("span").addClass('fa-pause');
-                }
-            });
-        });
-        $('#loginButton').click(function(){
-            $('#loginModal').modal('show');
-        });
-        $('#reserveButton').click(function(){
-            $('#reserve-table-modal').modal('show');
-        });
-        $('#reserveCloseButton').click(function(){
-            $('#reserve-table-modal').modal('hide');
-        });
-        $('#loginCloseButton').click(function(){
-            $('#loginModal').modal('hide');
-        });
-    </script>
     <!-- javascript carousel -->
     <!--
     <script>
-        var myCarousel = document.querySelector('#mycarousel')
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000,
-        })
-        document.getElementById("carousel-pause").addEventListener("click", function(){
-            carousel.pause(); 
-        });
-        document.getElementById("carousel-play").addEventListener("click", function(){ 
-            carousel.cycle(); 
-        });
+    var myCarousel = document.querySelector('#mycarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+    })
+    document.getElementById("carousel-pause").addEventListener("click", function(){
+        carousel.pause(); 
+    });
+    document.getElementById("carousel-play").addEventListener("click", function(){ 
+        carousel.cycle(); 
+    });
     </script>
     -->
-
+    
 </body>
 
 </html>
